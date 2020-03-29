@@ -1,4 +1,11 @@
 def nyc_pigeon_organizer(data)
+  data.reduce({}) do |pigeons, (attribute, attribute_options)|
+  attribute_options.reduce({}) do |attr_list, (option, names)|
+    names.each do |current_name|
+      pp({ current_name => { attribute => [option.to_s] } })
+    end
+  end
+end
 #  pp data
  # data.reduce({}) do |pigeons, (attribute, options)|
   #  p attribute
@@ -17,10 +24,3 @@ def nyc_pigeon_organizer(data)
 #  end
 #end
 
-data.reduce({}) do |pigeons, (attribute, attribute_options)|
-  attribute_options.reduce({}) do |attr_list, (option, names)|
-    names.each do |current_name|
-      pp({ current_name => { attribute => [option.to_s] } })
-    end
-  end
-end

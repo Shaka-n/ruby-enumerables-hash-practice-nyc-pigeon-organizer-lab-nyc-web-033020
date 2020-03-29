@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
       puts "loop 2"
       p options
       p names
-      value.map({}) do |pigeon_list, names|
+      value.reduce({}) do |pigeon_list, names|
         puts "loop 3"
         p names
         pigeon_list

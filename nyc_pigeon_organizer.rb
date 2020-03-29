@@ -11,5 +11,5 @@ def nyc_pigeon_organizer(data)
         p names
       end
     end
-  end
+    pigeons
 end

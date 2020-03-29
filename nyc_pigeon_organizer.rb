@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   pp data
-  data.reduce({}) do |pigeon_list, (attribute, options)|
+  data.reduce({}) do |attribute, (attribute, options)|
     
     value.reduce({}) do | pigeon_list, (options, name)|
 

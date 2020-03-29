@@ -1,11 +1,9 @@
 def nyc_pigeon_organizer(data)
   data.reduce({}) do |pigeons, (attribute, attribute_options)|
     attribute_options.map({}) do |names, (key, name)|
-    pp key
-    if names.include?(name)
-      
+    names += name
     end
-    pigeons
+    pp names
   end
 pp pigeons
 pp "end"

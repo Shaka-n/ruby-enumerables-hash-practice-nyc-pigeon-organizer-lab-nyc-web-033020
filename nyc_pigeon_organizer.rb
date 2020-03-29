@@ -1,15 +1,7 @@
 def nyc_pigeon_organizer(data)
   data.reduce({}) do |pigeons, (attribute, attribute_options)|
     attribute_options.reduce({}) do |names, (key, name)|
-    puts "key"
-    puts key
-    puts "name"
-    puts name
-    names += name
-    names
-    end
-    pp names
-    pigeons
+
   end
 end
 

@@ -17,7 +17,7 @@ pigeons = data.each_with_object({}) do |(attr_name, attr_values), pigeons|
     end
   end
 end
-
+end
 
 #def nyc_pigeon_organizer(data)
 #  data.each({}) do |attributes, pigeons|

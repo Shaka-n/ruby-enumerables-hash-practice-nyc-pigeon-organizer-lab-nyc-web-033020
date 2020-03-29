@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
     pp attr_options
       attr_options.each_with_object() do |names, pigeons|
       puts "Names"
-      pp name
+      pp names
         string_name = name.toString()
         pigeons[string_name] = {}
       end

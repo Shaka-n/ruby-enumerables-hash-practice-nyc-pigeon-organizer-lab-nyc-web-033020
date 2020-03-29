@@ -1,13 +1,7 @@
 def nyc_pigeon_organizer(data)
   pp data
-  data.reduce do |a, b, c, d|
-    puts "a"
-    puts a
-    puts "b"
-    puts b
-    puts "c"
-    puts c
-    puts "d"
-    puts d
+  data.reduce do |(key,value)|
+    puts key
+    puts value
     end
 end

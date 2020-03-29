@@ -9,10 +9,11 @@ def nyc_pigeon_organizer(data)
       puts "loop 2"
       p options
       p names
-      value.reduce({}) do |pigeon_list, names|
+      value.reduce({}) do |pigeon_list, name|
         puts "loop 3"
         p names
-        pigeon_list
+        if pigeon_list[name] != true 
+          pigeon_list[name] = name
         end
       end
     pigeon_list

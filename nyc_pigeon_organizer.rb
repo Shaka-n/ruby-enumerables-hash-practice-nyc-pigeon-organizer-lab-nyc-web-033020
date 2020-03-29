@@ -1,8 +1,8 @@
 def nyc_pigeon_organizer(data)
   data.reduce({}) do |pigeons, (attribute, attribute_options)|
-    attribute_options.map() do |name, (key,names)|
+    attribute_options.map({}) do |name, (key,names)|
     pp key
-    pp names
+    name names
     end
     pigeons
   end

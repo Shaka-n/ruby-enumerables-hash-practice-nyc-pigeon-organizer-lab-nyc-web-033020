@@ -3,6 +3,7 @@ def nyc_pigeon_organizer(data)
     attribute_options.map({}) do |names, (key, name)|
     pp key
     if names.include?(name)
+      
     end
     pigeons
   end

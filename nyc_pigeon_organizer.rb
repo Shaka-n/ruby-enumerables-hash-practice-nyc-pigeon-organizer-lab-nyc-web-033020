@@ -17,6 +17,7 @@ pigeons = data.each_with_object({}) do |attr_names, pigeons|
     end
   end
 end
+end
 
 pp pigeons
 

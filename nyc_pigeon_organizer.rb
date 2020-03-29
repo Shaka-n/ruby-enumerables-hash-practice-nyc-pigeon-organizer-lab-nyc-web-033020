@@ -11,7 +11,6 @@ def nyc_pigeon_organizer(data)
         string_name = name.toString()
         pigeons[string_name] = {}
       end
-      
     end
   end
 end

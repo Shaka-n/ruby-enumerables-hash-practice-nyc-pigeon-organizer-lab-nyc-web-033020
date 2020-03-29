@@ -1,4 +1,5 @@
 def nyc_pigeon_organizer(data)
+  pp data
   data.reduce do |a, b, c, d|
     puts "a"
     puts a

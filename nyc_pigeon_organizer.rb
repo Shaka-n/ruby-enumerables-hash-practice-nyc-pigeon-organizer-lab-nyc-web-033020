@@ -19,7 +19,6 @@ def nyc_pigeon_organizer(data)
       if pigeon_list[options]!= true 
         
       end
-    end
     pigeon_list
     end
 end

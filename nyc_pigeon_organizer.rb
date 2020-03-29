@@ -4,10 +4,10 @@ def nyc_pigeon_organizer(data)
     pp attributes
     attributes.reduce({}) do |memo, (attr_options)|
       puts "Attr_Options"
-    pp attr_options
+      pp attr_options
       attr_options.each() do |names, pigeons|
-      puts "Names"
-      pp names
+        puts "Names"
+        pp names
         string_name = name.toString()
         pigeons[string_name] = {}
       end

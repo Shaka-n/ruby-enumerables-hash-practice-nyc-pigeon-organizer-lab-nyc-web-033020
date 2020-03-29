@@ -1,7 +1,6 @@
 def nyc_pigeon_organizer(data)
-pigeons = {}
-pigeons = data.each_with_object({}) do |attr_names, pigeons|
-  attr_names[1].each do |attr_value, names|
+pigeons = data.each_with_object({}) do |(attr_name, attr_values), pigeons|
+  attr_values.each do |attr_value, names|
     names.each do |name|
       # add hash for current name, i.e. Theo => {}
       unless pigeons[name]
@@ -9,15 +8,14 @@ pigeons = data.each_with_object({}) do |attr_names, pigeons|
       end
 
       # add hash for current attribute, i.e. Theo => :color => []
-      unless pigeons[name][attr_names[0]]
-        pigeons[name][attr_names[0]] = []
+      unless pigeons[name][attr_name]
+        pigeons[name][attr_name] = []
       end
 
       # add attribute value, i.e. Theo => :color => ["purple"]
-      pigeons[name][attr_names[0]] << attr_value.to_s
+      pigeons[name][attr_name] << attr_value.to_s
     end
   end
-end
 end
 
 

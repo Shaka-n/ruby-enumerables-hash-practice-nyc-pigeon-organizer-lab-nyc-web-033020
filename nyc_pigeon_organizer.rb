@@ -4,6 +4,7 @@ def nyc_pigeon_organizer(data)
     p pigeon_list
     p key
     value.reduce({}) do | pigeon_list, (key, value)|
+      pigeon_list[value][key] = pigeon_list[key][value]
       p key
       p value
       end

@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   data.each({}) do |attributes, pigeons|
     puts "Attributes"
     pp attributes
-    attributes.reduce({}) do |memo, (attr_options)|
+    attributes.reduce({}) do |memo, (key, value)|
       puts "Attr_Options"
       pp attr_options
       attr_options.each() do |names, pigeons|

@@ -1,19 +1,40 @@
+pigeons = old_pigeons.each_with_object({}) do |attr_names, pigeons|
+  attr_names[1].each do |attr_value, names|
+    names.each do |name|
+      # add hash for current name, i.e. Theo => {}
+      unless pigeons[name]
+        pigeons[name] = {}
+      end
+
+      # add hash for current attribute, i.e. Theo => :color => []
+      unless pigeons[name][attr_names[0]]
+        pigeons[name][attr_names[0]] = []
+      end
+
+      # add attribute value, i.e. Theo => :color => ["purple"]
+      pigeons[name][attr_names[0]] << attr_value.to_s
+    end
+  end
+end
+
+pp pigeons
+
 #def nyc_pigeon_organizer(data)
 #  data.each({}) do |attributes, pigeons|
 #    puts "Attributes"
 #    pp attributes
 #    attributes.reduce({}) do |memo, (key, value)|
 #      puts "Attr_Options"
-      pp attr_options
-      attr_options.each() do |names, pigeons|
-        puts "Names"
-        pp names
-        string_name = name.toString()
-        pigeons[string_name] = {}
-      end
-    end
-  end
-end
+#      pp attr_options
+#      attr_options.each() do |names, pigeons|
+#        puts "Names"
+#        pp names
+#        string_name = name.toString()
+#        pigeons[string_name] = {}
+#      end
+#    end
+#  end
+#end
 
 #  pp data
  # data.reduce({}) do |pigeons, (attribute, options)|

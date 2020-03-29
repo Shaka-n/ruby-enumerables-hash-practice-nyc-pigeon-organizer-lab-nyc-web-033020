@@ -1,7 +1,11 @@
 def nyc_pigeon_organizer(data)
-  data.reduce({}) do |pigeons, (attribute, attribute_options)|
-    attribute_options.reduce({}) do |names, (key, name)|
-
+  data.each_with_object({}) do |attributes, pigeons|
+    attributes.each_with_object({})|attr_options, pigeons|
+    attr_options.each_with_object({})|name, pigeons|
+    string_name = 
+    pigeons
+    end
+    end
   end
 end
 

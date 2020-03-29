@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
     puts "name"
     puts name
     names += name
+    names
     end
     pp names
   end

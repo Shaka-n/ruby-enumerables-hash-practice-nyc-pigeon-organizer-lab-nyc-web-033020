@@ -1,5 +1,7 @@
 def nyc_pigeon_organizer(data)
-  data.reduce do |memo|
-    
+  data.reduce do |memo, (key, value)|
+    puts memo
+    puts key
+    puts value
     end
 end

@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-
+  pigeons = {}
   pigeons = data.reduce({}) do |pigeons, (attribute, attribute_options)|
   attribute_options.reduce({}) do |attr_list, (option, names)|
     names.each do |current_name|

@@ -2,17 +2,17 @@ def nyc_pigeon_organizer(data)
 pigeons = data.each_with_object({}) do |(attr_name, attr_values), pigeons|
   attr_values.each do |attr_value, names|
     names.each do |name|
-      # add hash for current name, i.e. Theo => {}
+      
+      #if name does not exist in pigeons, create it
       unless pigeons[name]
         pigeons[name] = {}
       end
 
-      # add hash for current attribute, i.e. Theo => :color => []
+      #if attribute does not exist under the current name in pigeons, create it
       unless pigeons[name][attr_name]
         pigeons[name][attr_name] = []
       end
-
-      # add attribute value, i.e. Theo => :color => ["purple"]
+      # if attribute value does not exist within attribute of current name, shovel to array
       pigeons[name][attr_name] << attr_value.to_s
     end
   end

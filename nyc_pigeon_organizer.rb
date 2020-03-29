@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
     names
     end
     pp names
+    attribute
   end
 end
 

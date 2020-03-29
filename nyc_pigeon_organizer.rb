@@ -6,9 +6,11 @@ def nyc_pigeon_organizer(data)
     value.reduce({}) do | name, (options, names)|
       p options
       p names
+      name
       value.map(name) do |names|
         p name
         p names
+        name
       end
     end
     pigeons

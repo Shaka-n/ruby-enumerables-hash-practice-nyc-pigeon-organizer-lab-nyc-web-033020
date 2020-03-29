@@ -3,15 +3,15 @@ def nyc_pigeon_organizer(data)
   data.reduce({}) do |pigeons, (attribute, options)|
     p attribute
     p options
-    value.reduce({}) do | name, (options, names)|
+    value.reduce({}) do | attributes, (options, names)|
       p options
       p names
-      value.map(name) do |names|
+      value.map(name) do |options, names|
         p name
         p names
-        name
+        options
       end
-      name
+      attributes
     end
     pigeons
   end

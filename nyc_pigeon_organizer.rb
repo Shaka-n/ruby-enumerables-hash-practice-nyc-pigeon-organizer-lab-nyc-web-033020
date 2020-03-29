@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     attributes.each_with_object({}) do |attr_options, pigeons|
     puts "Attr_Options"
     pp attr_options
-      attr_options.each() do |names, pigeons|
+      attr_options.each_with_object() do |names, pigeons|
       puts "Names"
       pp name
         string_name = name.toString()

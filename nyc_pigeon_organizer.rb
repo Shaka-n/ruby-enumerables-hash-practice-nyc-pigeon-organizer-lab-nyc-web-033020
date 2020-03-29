@@ -1,14 +1,14 @@
 def nyc_pigeon_organizer(data)
   data.reduce({}) do |pigeons, (attribute, attribute_options)|
-  attribute_options.reduce({}) do |attr_list, (option, names)|
-    names.each do |current_name|
-      if pigeons[current_name] != true
-        pigeons[current_name] = {}
+    attribute_options.reduce({}) do |attr_list, (option, names)|
+      names.each do |current_name|
+        if pigeons[current_name] != true
+          pigeons[current_name] = {}
+       end
       end
-    end
     
+    end
   end
-end
 pp pigeons
 pp "end"
 end

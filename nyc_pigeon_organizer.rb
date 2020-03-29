@@ -5,8 +5,6 @@ def nyc_pigeon_organizer(data)
     end
     pp names
   end
-pp pigeons
-pp "end"
 end
 
 #  pp data

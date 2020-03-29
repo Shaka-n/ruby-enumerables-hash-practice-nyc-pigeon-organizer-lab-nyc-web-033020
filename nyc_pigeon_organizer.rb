@@ -3,7 +3,10 @@ def nyc_pigeon_organizer(data)
   data.reduce({}) do |pigeon_list, (key,value)|
     p pigeon_list
     p key
-    p value
+    value.reduce({}) do | pigeon_list, (key, value)|
+      p key
+      p value
+      end
     pigeon_list
     end
 end

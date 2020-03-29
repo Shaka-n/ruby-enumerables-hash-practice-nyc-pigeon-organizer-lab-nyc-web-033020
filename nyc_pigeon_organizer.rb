@@ -1,4 +1,5 @@
-pigeons = old_pigeons.each_with_object({}) do |attr_names, pigeons|
+def nyc_pigeon_organizer(data)
+pigeons = data.each_with_object({}) do |attr_names, pigeons|
   attr_names[1].each do |attr_value, names|
     names.each do |name|
       # add hash for current name, i.e. Theo => {}

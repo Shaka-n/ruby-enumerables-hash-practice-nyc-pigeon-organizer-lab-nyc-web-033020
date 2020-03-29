@@ -5,10 +5,10 @@ def nyc_pigeon_organizer(data)
     p pigeon_list
     p attribute
     p options
-    value.reduce({}) do | pigeon_list, (options, names)|
+    value.reduce({}) do | pigeon_list, (options, name)|
       puts "loop 2"
       p options
-      p names
+      p name
       value.reduce({}) do |pigeon_list, name|
         puts "loop 3"
         p names
@@ -16,8 +16,8 @@ def nyc_pigeon_organizer(data)
           pigeon_list[name] = name
         end
       end
-      if pigeon_list[options]!= true 
-        
+      if pigeon_list[name][options]!= true 
+        pigeon_list[name][options] = options
       end
     pigeon_list
     end

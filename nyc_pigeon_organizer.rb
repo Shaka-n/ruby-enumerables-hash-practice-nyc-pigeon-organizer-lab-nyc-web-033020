@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-  data.map({}) do |pigeons, (attribute, attribute_options)|
+  data.reduce({}) do |pigeons, (attribute, attribute_options)|
     attribute_options.map({}) do |names, (key, name)|
     pp key
     if names.include?(name)

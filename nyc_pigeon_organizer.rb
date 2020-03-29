@@ -7,9 +7,10 @@ def nyc_pigeon_organizer(data)
         pigeons[current_name] = {}
       end
     end
-    pp pigeons
+    
   end
 end
+pp pigeons
 end
 
 #  pp data

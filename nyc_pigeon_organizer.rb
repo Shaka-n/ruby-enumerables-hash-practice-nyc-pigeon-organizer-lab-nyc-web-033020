@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |attributes, pigeons|
     attributes.each_with_object({})|attr_options, pigeons|
     attr_options.each_with_object({})|name, pigeons|
-    string_name = 
+    string_name = name.toString
     pigeons
     end
     end

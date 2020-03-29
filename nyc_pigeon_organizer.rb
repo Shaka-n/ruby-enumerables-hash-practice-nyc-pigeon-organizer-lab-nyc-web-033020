@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
         pigeon_list[name][options] = options
       end
     end
-    if pigeon_list[name][options][attribute] != true
-      pigeon_list[name][options][attribute] = attribute
+    if pigeon_list[name][attribute][options] != true
+      pigeon_list[name][attribute][options] = options
   end
 end
